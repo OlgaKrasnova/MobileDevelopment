@@ -1,0 +1,13 @@
+<resources>
+    <string name="widget_name">Виджет-заметка</string>
+    <string name="widget_text">Текст виджета</string>
+    <string name="button">Сохранить</string>
+    <string name="editText">Введите текст виджета</string>
+    <string name="radioRed">Красный</string>
+    <string name="radioOrange">Оранжевый</string>
+    <string name="radioYellow">Желтый</string>
+    <string name="radioGreen">Зеленый</string>
+    <string name="radioLightBlue">Голубой</string>
+    <string name="radioDarkBlue">Синий</string>
+    <string name="radioViolet">Фиолетовый</string>
+</resources>
