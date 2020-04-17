@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Photo</string>
+    <string name="button">Сделать фото</string>
+    <string name="todo">TODO</string>
+</resources>
