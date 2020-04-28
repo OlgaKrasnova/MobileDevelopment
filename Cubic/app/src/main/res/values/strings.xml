@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Игра "Кубики"</string>
+    <string name="rules">Суть игры - вы с компьютером по очереди бросаете кубики, получая очки. Кто первый получит 100 очков, тот и выиграл. Если вы оба наберете 100 или больше - будет ничья. Удачи!</string>
+    <string name="your_points">Ваш результат:</string>
+    <string name="robot_points_text">Результат компьютера:</string>
+    <string name="cubes_text">На кубиках выпало:</string>
+    <string name="second_cube_points">-</string>
+    <string name="first_cube_points">-</string>
+    <string name="and">и</string>
+    <string name="robot_points">0</string>
+    <string name="your_points_number">0</string>
+    <string name="btn_text">Сделать ход</string>
+    <string name="title_activity_win">WinActivity</string>
+    <string name="win_text">Вы победили c:!</string>
+    <string name="loose_text">Вы проиграли :c</string>
+    <string name="nobody_text">Ничья!</string>
+    <string name="winimg_text">WinIMG</string>
+    <string name="s1200">s1200</string>
+    <string name="button_new_game">Играть снова</string>
+    <string name="button_new">Играть снова</string>
+</resources>
