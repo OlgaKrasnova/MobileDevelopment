@@ -50,6 +50,9 @@ public class ContactAdapter
                 intent.putExtra(EditActivity.PHONE, contact.phone);
                 intent.putExtra(EditActivity.EMAIL, contact.email);
                 intent.putExtra(EditActivity.POSITION, position);
+                if(contact.photo != null) {
+                    intent.putExtra(EditActivity.PHOTO, contact.photo.toString());
+                }
                 ((MainActivity)context).startActivityForResult(intent, EditActivity.EDIT);
             }
         });
@@ -62,8 +65,16 @@ public class ContactAdapter
 
     @Override
     public void onItemDismiss(int position) {
+        final Contact contact = list.get(position);
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                App.app.db.contactDao().delete(contact);
+                MainActivity.handler.sendEmptyMessage(0);
+            }
+        });
+        thread.start();
         list.remove(position);
-        ((MainActivity) context).adapter.notifyItemRemoved(position);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
