@@ -14,6 +14,9 @@ public interface ContactDao {
     @Insert
     void create(Contact contact);
 
+    @Query("SELECT COUNT(id) FROM contacts")
+    int count();
+
     @Query("SELECT * FROM contacts")
     List<Contact> readAll();
 
