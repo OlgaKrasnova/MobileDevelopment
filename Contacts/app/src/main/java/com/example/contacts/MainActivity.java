@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity {
         cursorPhone.close();
 
         //Получение электронных почт
-        Cursor cursorEmail = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+        Cursor cursorEmail = getContentResolver().query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,
                 new String[]{EMAIL_CONTACT_ID, EMAIL_ADDRESS},null, null, null);
         HashMap<Integer, ArrayList<String>> emails = new HashMap<>();
         if(cursorEmail != null && cursorEmail.getCount() > 0){
