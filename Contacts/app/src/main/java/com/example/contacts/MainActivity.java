@@ -275,7 +275,7 @@ public class MainActivity extends AppCompatActivity {
                 where, params, null);
 
         HashMap<Integer, FIO> fios = new HashMap<>();
-        if (cursorFIO != null && cursorFIO.getCount() > 0 && cursorFIO.moveToFirst()) {
+        if (cursorFIO != null && cursorFIO.getCount() > 0) {
             while (cursorFIO.moveToNext()) {
                 int id = cursorFIO.getInt(cursorFIO.getColumnIndex(NAME_CONTACT_ID));
                 String surname = cursorFIO.getString(cursorFIO.getColumnIndex(NAME_SURNAME));
